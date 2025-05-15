@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thornch/Documents/Cpp/s_pipe_kinematics
+CMAKE_SOURCE_DIR = /home/thornch/Documents/Cpp/s_pipe_kinematicscpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thornch/Documents/Cpp/s_pipe_kinematics/build
+CMAKE_BINARY_DIR = /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/s_pipe_demo.dir/depend.make
@@ -73,46 +73,46 @@ CMakeFiles/s_pipe_demo.dir/codegen:
 .PHONY : CMakeFiles/s_pipe_demo.dir/codegen
 
 CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o: CMakeFiles/s_pipe_demo.dir/flags.make
-CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o: /home/thornch/Documents/Cpp/s_pipe_kinematics/src/forward_kinematics.cpp
+CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o: /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/forward_kinematics.cpp
 CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o: CMakeFiles/s_pipe_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o -MF CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o.d -o CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o -c /home/thornch/Documents/Cpp/s_pipe_kinematics/src/forward_kinematics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o -MF CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o.d -o CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o -c /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/forward_kinematics.cpp
 
 CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thornch/Documents/Cpp/s_pipe_kinematics/src/forward_kinematics.cpp > CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/forward_kinematics.cpp > CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.i
 
 CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thornch/Documents/Cpp/s_pipe_kinematics/src/forward_kinematics.cpp -o CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/forward_kinematics.cpp -o CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.s
 
 CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o: CMakeFiles/s_pipe_demo.dir/flags.make
-CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o: /home/thornch/Documents/Cpp/s_pipe_kinematics/src/inverse_kinematics.cpp
+CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o: /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/inverse_kinematics.cpp
 CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o: CMakeFiles/s_pipe_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o -MF CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o.d -o CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o -c /home/thornch/Documents/Cpp/s_pipe_kinematics/src/inverse_kinematics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o -MF CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o.d -o CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o -c /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/inverse_kinematics.cpp
 
 CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thornch/Documents/Cpp/s_pipe_kinematics/src/inverse_kinematics.cpp > CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/inverse_kinematics.cpp > CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.i
 
 CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thornch/Documents/Cpp/s_pipe_kinematics/src/inverse_kinematics.cpp -o CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/inverse_kinematics.cpp -o CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.s
 
 CMakeFiles/s_pipe_demo.dir/src/main.cpp.o: CMakeFiles/s_pipe_demo.dir/flags.make
-CMakeFiles/s_pipe_demo.dir/src/main.cpp.o: /home/thornch/Documents/Cpp/s_pipe_kinematics/src/main.cpp
+CMakeFiles/s_pipe_demo.dir/src/main.cpp.o: /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/main.cpp
 CMakeFiles/s_pipe_demo.dir/src/main.cpp.o: CMakeFiles/s_pipe_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/s_pipe_demo.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s_pipe_demo.dir/src/main.cpp.o -MF CMakeFiles/s_pipe_demo.dir/src/main.cpp.o.d -o CMakeFiles/s_pipe_demo.dir/src/main.cpp.o -c /home/thornch/Documents/Cpp/s_pipe_kinematics/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/s_pipe_demo.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s_pipe_demo.dir/src/main.cpp.o -MF CMakeFiles/s_pipe_demo.dir/src/main.cpp.o.d -o CMakeFiles/s_pipe_demo.dir/src/main.cpp.o -c /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/main.cpp
 
 CMakeFiles/s_pipe_demo.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s_pipe_demo.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thornch/Documents/Cpp/s_pipe_kinematics/src/main.cpp > CMakeFiles/s_pipe_demo.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/main.cpp > CMakeFiles/s_pipe_demo.dir/src/main.cpp.i
 
 CMakeFiles/s_pipe_demo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s_pipe_demo.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thornch/Documents/Cpp/s_pipe_kinematics/src/main.cpp -o CMakeFiles/s_pipe_demo.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/main.cpp -o CMakeFiles/s_pipe_demo.dir/src/main.cpp.s
 
 # Object files for target s_pipe_demo
 s_pipe_demo_OBJECTS = \
@@ -128,7 +128,7 @@ s_pipe_demo: CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o
 s_pipe_demo: CMakeFiles/s_pipe_demo.dir/src/main.cpp.o
 s_pipe_demo: CMakeFiles/s_pipe_demo.dir/build.make
 s_pipe_demo: CMakeFiles/s_pipe_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable s_pipe_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable s_pipe_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/s_pipe_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +140,6 @@ CMakeFiles/s_pipe_demo.dir/clean:
 .PHONY : CMakeFiles/s_pipe_demo.dir/clean
 
 CMakeFiles/s_pipe_demo.dir/depend:
-	cd /home/thornch/Documents/Cpp/s_pipe_kinematics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thornch/Documents/Cpp/s_pipe_kinematics /home/thornch/Documents/Cpp/s_pipe_kinematics /home/thornch/Documents/Cpp/s_pipe_kinematics/build /home/thornch/Documents/Cpp/s_pipe_kinematics/build /home/thornch/Documents/Cpp/s_pipe_kinematics/build/CMakeFiles/s_pipe_demo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thornch/Documents/Cpp/s_pipe_kinematicscpp /home/thornch/Documents/Cpp/s_pipe_kinematicscpp /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/build/CMakeFiles/s_pipe_demo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/s_pipe_demo.dir/depend
 

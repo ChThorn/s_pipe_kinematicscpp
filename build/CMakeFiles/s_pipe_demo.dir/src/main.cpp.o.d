@@ -1,7 +1,7 @@
 CMakeFiles/s_pipe_demo.dir/src/main.cpp.o: \
- /home/thornch/Documents/Cpp/s_pipe_kinematics/src/main.cpp \
+ /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/thornch/Documents/Cpp/s_pipe_kinematics/include/s_pipe_robot.h \
+ /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/include/s_pipe_robot.h \
  /usr/include/c++/11/array /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -399,10 +399,10 @@ CMakeFiles/s_pipe_demo.dir/src/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/thornch/Documents/Cpp/s_pipe_kinematics/include/forward_kinematics.h \
- /home/thornch/Documents/Cpp/s_pipe_kinematics/include/s_pipe_robot.h \
- /home/thornch/Documents/Cpp/s_pipe_kinematics/include/inverse_kinematics.h \
- /home/thornch/Documents/Cpp/s_pipe_kinematics/include/forward_kinematics.h \
+ /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/include/forward_kinematics.h \
+ /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/include/s_pipe_robot.h \
+ /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/include/inverse_kinematics.h \
+ /home/thornch/Documents/Cpp/s_pipe_kinematicscpp/include/forward_kinematics.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/iomanip \
  /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \

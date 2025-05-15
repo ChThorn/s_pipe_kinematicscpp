@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/thornch/Documents/Cpp/s_pipe_kinematics/src/forward_kinematics.cpp" "CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o" "gcc" "CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o.d"
-  "/home/thornch/Documents/Cpp/s_pipe_kinematics/src/inverse_kinematics.cpp" "CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o" "gcc" "CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o.d"
-  "/home/thornch/Documents/Cpp/s_pipe_kinematics/src/main.cpp" "CMakeFiles/s_pipe_demo.dir/src/main.cpp.o" "gcc" "CMakeFiles/s_pipe_demo.dir/src/main.cpp.o.d"
+  "/home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/forward_kinematics.cpp" "CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o" "gcc" "CMakeFiles/s_pipe_demo.dir/src/forward_kinematics.cpp.o.d"
+  "/home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/inverse_kinematics.cpp" "CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o" "gcc" "CMakeFiles/s_pipe_demo.dir/src/inverse_kinematics.cpp.o.d"
+  "/home/thornch/Documents/Cpp/s_pipe_kinematicscpp/src/main.cpp" "CMakeFiles/s_pipe_demo.dir/src/main.cpp.o" "gcc" "CMakeFiles/s_pipe_demo.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
