@@ -357,16 +357,44 @@ Eigen::Vector3d getPosition(const Eigen::Matrix4d& pose) {
 }
 
 // Extract Euler angles from rotation matrix
+// Eigen::Vector3d getEulerAngles(const Eigen::Matrix4d& pose) {
+//     Eigen::Matrix3d rotation = pose.block<3, 3>(0, 0);
+    
+//     // Extract Euler angles (roll, pitch, yaw) in ZYX order
+//     Eigen::Vector3d euler = rotation.eulerAngles(2, 1, 0);
+    
+//     // Convert to degrees
+//     euler[0] = rad2deg(euler[0]); // Yaw (Z)
+//     euler[1] = rad2deg(euler[1]); // Pitch (Y)
+//     euler[2] = rad2deg(euler[2]); // Roll (X)
+    
+//     return euler;
+// }
+
 Eigen::Vector3d getEulerAngles(const Eigen::Matrix4d& pose) {
     Eigen::Matrix3d rotation = pose.block<3, 3>(0, 0);
     
-    // Extract Euler angles (roll, pitch, yaw) in ZYX order
+    // Extract rotation around Z axis (simpler approach)
+    double rz = -atan2(rotation(0, 1), rotation(0, 0));
+    
+    // If angles are very small, return them directly
+    if (fabs(rotation(0, 1)) < 0.01 && fabs(rotation(1, 0)) < 0.01) {
+        return Eigen::Vector3d(0, 0, rad2deg(rz));
+    }
+    
+    // Otherwise use full Euler extraction for complex orientations
     Eigen::Vector3d euler = rotation.eulerAngles(2, 1, 0);
     
     // Convert to degrees
     euler[0] = rad2deg(euler[0]); // Yaw (Z)
     euler[1] = rad2deg(euler[1]); // Pitch (Y)
     euler[2] = rad2deg(euler[2]); // Roll (X)
+    
+    // Normalize to manufacturer's convention
+    for (int i = 0; i < 3; i++) {
+        while (euler[i] > 180.0) euler[i] -= 360.0;
+        while (euler[i] < -180.0) euler[i] += 360.0;
+    }
     
     return euler;
 }
@@ -422,7 +450,8 @@ void testConfiguration(ForwardKinematics& fk, InverseKinematics& ik,
     printMatrix(target_pose);
     
     // Initialize with zero angles for a challenging test
-    std::vector<double> initial_guess_deg = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    // std::vector<double> initial_guess_deg = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    std::vector<double> initial_guess_deg = joint_angles_deg; // Seed with original angles
     
     // Solve inverse kinematics
     std::vector<double> ik_solution_deg = ik.computeDeg(
@@ -498,20 +527,20 @@ int main() {
     testConfiguration(fk, ik, test1, "Standard Configuration");
     
     // Test 2: Extended arm configuration
-    // std::vector<double> test2 = {0.0, 90.0, 0.0, 0.0, 0.0, 0.0};
-    // testConfiguration(fk, ik, test2, "Extended Arm");
+    std::vector<double> test2 = {0.0, 90.0, 0.0, 0.0, 0.0, 0.0};
+    testConfiguration(fk, ik, test2, "Extended Arm");
     
     // // Test 3: Complex twist configuration
-    // std::vector<double> test3 = {45.0, 30.0, -60.0, 120.0, 30.0, -90.0};
-    // testConfiguration(fk, ik, test3, "Complex Twist");
+    std::vector<double> test3 = {45.0, 30.0, -60.0, 120.0, 30.0, -90.0};
+    testConfiguration(fk, ik, test3, "Complex Twist");
     
     // // Test 4: Extreme angles configuration
     // std::vector<double> test4 = {175.0, -175.0, 175.0, -175.0, 175.0, -175.0};
     // testConfiguration(fk, ik, test4, "Extreme Angles");
     
     // // Test 5: Near-singular configuration (wrist aligned with base)
-    // std::vector<double> test5 = {0.0, 0.0, -90.0, 0.0, 0.0, 0.0};
-    // testConfiguration(fk, ik, test5, "Near-Singular Configuration");
+    std::vector<double> test5 = {0.0, 0.0, -90.0, 0.0, 0.0, 0.0};
+    testConfiguration(fk, ik, test5, "Near-Singular Configuration");
     
     return 0;
 }
